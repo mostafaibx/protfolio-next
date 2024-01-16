@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import './Landing.css'
 
 const Landing = () => {
   return (
@@ -27,7 +28,7 @@ const Landing = () => {
       </div>
 
       <Image
-        className='w-1/4 h-1/4 border-4 border-white shadow-2xl rounded-full'
+        className='profile-pic'
         src='https://i.imgur.com/0Ek0Ibe.jpg'
         alt='cvPhoto'
         width={300}
