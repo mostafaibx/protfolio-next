@@ -1,0 +1,11 @@
+.skill-box {
+  background-color: #2d425781;
+  @apply w-full h-full p-10 flex flex-col justify-center items-center rounded-3xl hover:shadow-2xl hover:ring-2 hover:ring-amber-400 transition-all duration-300;
+}
+
+.inactive {
+  filter: grayscale(100%);
+}
+.inactive:hover {
+  filter: grayscale(0%);
+}

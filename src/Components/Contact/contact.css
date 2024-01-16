@@ -1,0 +1,3 @@
+.contact-icon {
+  @apply text-white hover:text-amber-400 hover:scale-125 transition-all duration-300;
+}

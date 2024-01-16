@@ -1,0 +1,7 @@
+.under-line {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  transition: all;
+  @apply border-b-2 border-rose-700 duration-500;
+}

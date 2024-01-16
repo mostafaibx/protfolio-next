@@ -1,0 +1,11 @@
+.container {
+  @apply w-full h-[600px] flex justify-center items-center mx-10 relative overflow-hidden;
+}
+.container::after {
+  content: '';
+  @apply w-full h-full bg-gradient-to-tl from-black to-transparent opacity-70;
+}
+
+.circle {
+  @apply rounded-full absolute transition-all ease-in-out;
+}
