@@ -15,7 +15,7 @@ const Landing = () => {
           increases by the minute, which drives me to learn more everyday.
         </p>
         <a
-          href='https://file.io/qdATz6LyJ75m'
+          href='../../data/Mostafa_Ibrahim_CV.pdf'
           target='_blank'
           className='relative w-fit mt-10 px-6 py-4 text-xl font-semibold text-white rounded-lg group'
         >
