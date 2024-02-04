@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Projec.css'
 import Repos from '../Projects/Repos'
 import { repos } from '@/data/projects'
@@ -65,17 +65,17 @@ const Projec = () => {
     setCurrentIndex(newIndex)
   }
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      changeSlideHandler()
+    }, 5000)
+    return () => clearInterval(interval)
+  })
+
   return (
     <div>
-      <button
-        className='px-4 py-2 mt-20 mx-4 text-white bg-slate-700'
-        onClick={changeSlideHandler}
-      >
-        Change
-      </button>
-      <Counter currentIndex={currentIndex} />
       <div className='  flex justify-center items-center'>
-        <div className='container'>
+        <div className='container m-20'>
           <div className='w-full h-full absolute t-0 l-0 flex justify-center items-center z-50'>
             <Repos repos={repos[currentIndex]} />
           </div>
