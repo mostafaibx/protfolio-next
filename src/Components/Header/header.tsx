@@ -12,7 +12,7 @@ const Header = () => {
 
   ;<Link href='/dashboard'>Dashboard</Link>
   return (
-    <div className='w-full h-12 bg-gray-600 bg-opacity-80 text-white fixed z-50'>
+    <div className='w-full h-16 bg-gray-600 bg-opacity-80 text-white fixed z-50'>
       <span
         className='under-line'
         style={{ left: `${selected.p}%`, width: `${selected.w}%` }}
