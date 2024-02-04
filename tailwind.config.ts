@@ -2,8 +2,12 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   important: true,
+  purge: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './src/Components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/Components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
