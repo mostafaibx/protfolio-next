@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import './Landing.css'
+import './landing.css'
 
 const Landing = () => {
   return (
